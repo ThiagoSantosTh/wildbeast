@@ -44,7 +44,7 @@ a {
 }
 
 img {
-  max-width: 100px;
+  max-width: 100%;
 }
 
 #app {
