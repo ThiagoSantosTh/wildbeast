@@ -16,4 +16,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.advert {
+  background: #fafbfc;
+  display: grid;
+  align-content: flex-start;
+  padding: 30px;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+</style>

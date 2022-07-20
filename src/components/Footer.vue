@@ -10,4 +10,15 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped>
+.footer {
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+}
+
+p {
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 30px;
+}
+</style>

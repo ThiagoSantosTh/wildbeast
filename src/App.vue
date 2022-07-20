@@ -44,7 +44,9 @@ a {
 }
 
 img {
-  max-width: 100%;
+  display: block;
+  border-radius: 5px;
+  width: 100%;
 }
 
 #app {
@@ -74,5 +76,38 @@ img {
 
 .advert {
   grid-area: advert;
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1200px) {
+  #app {
+    grid-template-areas:
+      "header   header    header"
+      "sidebar  content   content"
+      "sidebar  advert       advert"
+      "footer   footer    footer";
+  }
+}
+
+@media (max-width: 760px) {
+  #app {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "advert"
+      "footer";
+  }
 }
 </style>

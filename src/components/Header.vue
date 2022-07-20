@@ -55,4 +55,22 @@ nav a:hover {
 .header li + li {
   margin-left: 30px;
 }
+
+@media (max-width: 760px) {
+  .header {
+    grid-template-columns: auto;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+  }
+
+  .header nav a {
+    font-size: 1rem;
+  }
+
+  .header nav ul li a + a {
+    margin-left: 10px;
+  }
+}
 </style>
